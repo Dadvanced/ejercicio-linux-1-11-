@@ -169,7 +169,7 @@ mv multimedia/video/films.txt multimedia/my_films.txt
 | 764 | rwxrw-r-- |
 | 440 | r--r----- |
 
-```
+
 
 ## Ejercicio 2
 - Crea el grupo *office1* y *office2*
