@@ -153,7 +153,7 @@ rmdir multimedia/pictures/other
 
 ```console
 mv multimedia/video/films.txt multimedia/my_films.txt
-´´´
+```
 
 
 # Ejercicios de Linux - Tema 4
