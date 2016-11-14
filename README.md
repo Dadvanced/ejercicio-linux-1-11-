@@ -158,7 +158,7 @@ mv multimedia/video/films.txt multimedia/my_films.txt
 
 # Ejercicios de Linux - Tema 4
 
-# Ejercicio 1
+## Ejercicio 1
 - Completa la siguiente tabla:
 
 | 654 | rw-r-xr-- |
@@ -170,3 +170,21 @@ mv multimedia/video/films.txt multimedia/my_films.txt
 | 440 | r--r----- |
 
 ```
+
+## Ejercicio 2
+- Crea el grupo *office1* y *office2*
+
+```console
+sudo groupadd office1
+sudo groupadd office2
+```
+
+## Ejercicio 3
+- Crea el usuario *gearoid* y *paul*. Esos usuarios deben pertecener sólo al grupo *office1*.
+
+```console
+adduser georid --ingroup office1
+adduser paul --ingroup office1
+```
+
+
