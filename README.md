@@ -153,4 +153,20 @@ rmdir multimedia/pictures/other
 
 ```console
 mv multimedia/video/films.txt multimedia/my_films.txt
+
+
+
+# Ejercicios de Linux - Tema 4
+
+# Ejercicio 1
+- Completa la siguiente tabla:
+
+| 654 | rw-r-xr-- |
+|:-----:|:-----------:|
+| 766 | rwxrw-rw- |
+| 777 | rwxrwxrwx |
+| 520 | r-x-w---- |
+| 764 | rwxrw-r-- |
+| 440 | r--r----- |
+
 ```
