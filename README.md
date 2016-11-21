@@ -1,4 +1,4 @@
-# Ejercicios de Linux
+# Ejercicios de Linux tema 3
 Ejercicios de la consola de Linux
 
 ## Ejercicio 1
@@ -187,4 +187,67 @@ adduser georid --ingroup office1
 adduser paul --ingroup office1
 ```
 
+## Ejercicio 4
+- Crea el usuario "anna" y "emma". Esos usuarios deben pertecener sólo al grupo "office2".
 
+```console
+adduser anna --ingroup office1
+adduser emma --ingroup office1
+```
+
+## Ejercicio 5
+- Como usuario "geroid" crea un archivo llamado "topsecret.txt" en su directorio "home". Sólo
+éste usuario debe tener acceso al archivo, como lectura y escritura.
+
+```console
+su geroid
+cd
+touch topsecret.txt
+chmod 600 topsecret.txt
+```
+
+## Ejercicio 6
+- Crea otro archivo llamado "sales.txt", tambien como usuario "geroid". Todos los usuarios del
+mismo grupo de "geroid" deben tener el acceso al archivo como escritura y lectura.
+Los permisos para el propietario y el resto de usuarios permanecen por defecto.
+Comprueba que puedes modificar el archivo si accedes como "paul".
+
+```console
+su geroid
+cd
+touch sales.txt
+chmod g+rw sales.txt
+su paul
+cd
+mcedit sales.txt
+```
+
+## Ejercicio 7
+- Como usuario "anna", crea el archivo llamado "employees.txt". Cualquier usuario debe tener
+acceso a leer su contenido y cualquier usuario del mismo grupo debe tener acceso a lectura y 
+escritura.
+
+```console
+su anna
+cd
+touch employees.txt
+chmod o+r employees.txt
+chmod g+rw employees.txt
+```
+
+## Ejercicio 8
+- Crear el usuario "student" (si no está creado ya). Copia el archivo "employees.txt" al 
+directorio "home" del usuario "student". Cambia el propietario y el grupo de éste archivo
+a "student".
+
+```console
+adduser student
+su student
+cp \home\anna\employees.txt \home\student\
+cd
+chown student employees.txt
+chgrp student employees.txt
+```
+
+## Ejercicio 17
+- 
